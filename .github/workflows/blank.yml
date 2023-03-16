@@ -1,0 +1,10 @@
+name: Create function on Cloud Run
+
+on:
+  workflow_dispatch
+
+jobs:
+  deploy_on_cloud:
+    name: Create function
+    uses: wgall-org/functions_CICD/.github/workflows/main.yml@dev
+    secrets: inherit
