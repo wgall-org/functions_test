@@ -1,10 +1,11 @@
 name: Create function on Cloud Run
 
 on:
-  workflow_dispatch
+  push:
 
 jobs:
-  deploy_on_cloud:
-    name: Create function
-    uses: wgall-org/functions_CICD/.github/workflows/main.yml@dev
-    secrets: inherit
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print test
+        run: echo test
