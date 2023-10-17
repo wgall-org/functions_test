@@ -3,8 +3,6 @@ name: Create function on Cloud Run
 on:
   push:
 
-
-
 jobs:
   test:
     runs-on: ubuntu-latest
