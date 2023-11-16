@@ -2,7 +2,8 @@ name: Create function on Cloud Run
 
 on:
   push:
-
+  repository_dispatch:
+    
 
 jobs:
   test:
